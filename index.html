@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Password generator</title>
+	<meta name="description" content="Password generator">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<header class="header">
+		<h1>Password generator</h1>
+	</header>
+
+	<main class="main container">
+		<div class="left-block components">
+			<div class="switch__container">
+				<div class="switch switch-listener ">
+					<div class="switch__1 switch__param">
+						<input class="checkbox" id="password-param-1" type="checkbox">
+						<label for="password-param-1"></label>
+					</div>
+					<div class="switch__2 switch__param">
+						<input class="checkbox" id="password-param-2" type="checkbox" checked>
+						<label for="password-param-2"></label>
+					</div>
+					<div class="switch__3 switch__param">
+						<input class="checkbox" id="password-param-3" type="checkbox">
+						<label for="password-param-3"></label>
+					</div>
+					<div class="switch__4 switch__param">
+						<input class="checkbox" id="password-param-4" type="checkbox" checked>
+						<label for="password-param-4"></label>
+					</div>
+				</div>
+				<ul class="textlabel">
+					<li>Include Numbers (123..)</li>
+					<li>Include Uppercase Characters (ABC..)</li>
+					<li>Include Lowercase Characters (abc..)</li>
+					<li>Include Symbols (!@#..)</li>
+				</ul>
+			</div>
+
+			<div class="slider">
+				<label for="slider__box">Длинна пароля</label>
+				<div class="slider__box pass-lenght">
+					<span class="slider__btn" id="find"></span>
+					<span class="slider__color"></span>
+					<span class="slider__tooltip">25</span>
+				</div>
+
+				<div class="btn btn__primary" id="generator">
+					<p class="repeat"></p>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="right-block components">			
+			<h2>Click to copy</h2>
+			<div class="out" id="out">
+			</div>
+		</div>
+	</main>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
